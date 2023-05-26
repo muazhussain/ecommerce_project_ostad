@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../screens/home_screen.dart';
 import '../utils/app_colors.dart';
+import '../screens/email_verification_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -17,8 +17,8 @@ class _SplashScreenState extends State<SplashScreen> {
     Future.delayed(
       const Duration(seconds: 2),
     ).then(
-      (value) => Get.offAll(
-        () => const HomeScreen(),
+      (value) => Get.off(
+        () => const EmailVerificationScreen(),
         transition: Transition.downToUp,
         duration: const Duration(
           seconds: 1,
@@ -46,7 +46,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 color: primaryColor,
               ),
               SizedBox(
-                height: 20,
+                height: 16,
               ),
               Text(
                 'Version 1.0',
@@ -57,7 +57,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 ),
               ),
               SizedBox(
-                height: 20,
+                height: 16,
               ),
             ],
           ),
