@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const ECommerce());
+  runApp(const CraftyBay());
 }
 
-class ECommerce extends StatelessWidget {
-  const ECommerce({super.key});
+class CraftyBay extends StatelessWidget {
+  const CraftyBay({super.key});
 
   @override
   Widget build(BuildContext context) {
