@@ -1,7 +1,7 @@
+import 'package:ecommerce_project_ostad/ui/screens/otp_verification_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../utils/app_colors.dart';
-import '../screens/email_verification_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -18,10 +18,10 @@ class _SplashScreenState extends State<SplashScreen> {
       const Duration(seconds: 2),
     ).then(
       (value) => Get.off(
-        () => const EmailVerificationScreen(),
+        () => const OtpVerificationScreen(),
         transition: Transition.downToUp,
         duration: const Duration(
-          seconds: 1,
+          milliseconds: 500,
         ),
       ),
     );
