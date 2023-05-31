@@ -1,4 +1,4 @@
-import 'package:ecommerce_project_ostad/ui/screens/otp_verification_screen.dart';
+import 'package:ecommerce_project_ostad/ui/screens/bottom_nav_bar_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../utils/app_colors.dart';
@@ -18,7 +18,7 @@ class _SplashScreenState extends State<SplashScreen> {
       const Duration(seconds: 2),
     ).then(
       (value) => Get.off(
-        () => const OtpVerificationScreen(),
+        () => const BottomNavBarScreen(),
         transition: Transition.downToUp,
         duration: const Duration(
           milliseconds: 500,
