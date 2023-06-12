@@ -20,20 +20,20 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
     const WishlistScreen(),
   ];
 
-  int _selected_index = 0;
+  int _selectedIndex = 0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _screens[_selected_index],
+      body: _screens[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         onTap: (value) {
-          _selected_index = value;
+          _selectedIndex = value;
           if (mounted) {
             setState(() {});
           }
         },
-        currentIndex: _selected_index,
+        currentIndex: _selectedIndex,
         selectedItemColor: primaryColor,
         unselectedItemColor: greyColor,
         showUnselectedLabels: true,
